@@ -13,8 +13,26 @@ body {
 }
 
 header {
-  border-bottom: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
+}
+
+.country {
+  font-size: 25px;
+}
+
+.time {
+  font-size: 15px;
+  opacity: 70%;
+}
+
+.temperature {
+  padding-bottom: 0%;
+}
+
+.conditions {
+  font-style: italic;
+  font-size: 15px;
+  opacity: 70%;
 }
 
 .search-field {
