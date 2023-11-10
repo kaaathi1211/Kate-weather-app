@@ -3,6 +3,15 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .weather-app {
   background-color: #fff0db;
   max-width: 600px;
@@ -17,6 +26,9 @@ header {
 }
 
 .search-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   text-align: center;
 }
 .search-field {
@@ -82,9 +94,22 @@ ul {
 
 li {
   padding: 4px;
-  font-size: 15px;
+  font-size: 12px;
   opacity: 90%;
   text-align: center;
+}
+
+.right-side {
+  flex: 1; /* Takes up equal space with the left side */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #f0f0f0; /* Background color for the right side */
+  /* Add any other styles you want for the right side content */
+}
+
+.right-side p {
+  font-size: 16px; /* Adjust the font size */
+  text-align: center; /* Center align the text */
+  color: #333; /* Text color */
 }
 
 footer {
