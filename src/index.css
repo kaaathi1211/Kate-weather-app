@@ -99,19 +99,6 @@ li {
   text-align: center;
 }
 
-.right-side {
-  flex: 1; /* Takes up equal space with the left side */
-  padding: 20px; /* Add padding for spacing */
-  background-color: #f0f0f0; /* Background color for the right side */
-  /* Add any other styles you want for the right side content */
-}
-
-.right-side p {
-  font-size: 16px; /* Adjust the font size */
-  text-align: center; /* Center align the text */
-  color: #333; /* Text color */
-}
-
 footer {
   border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;

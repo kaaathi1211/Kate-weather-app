@@ -2,38 +2,31 @@
 <html lang="en">
   <div class="weather-app">
     <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="src/index.css" />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap"
-        rel="stylesheet"
-      />
-      <title>Kate's weather app</title>
-    </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kate's weather app</title>
+  <link rel="stylesheet" href="src/index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet" />
+</head>
     <body>
       <header>
         <div class="left-side">
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
+            id="search-form-input"
             class="search-field"
           />
           <input type="submit" value="Search" class="submit-btn" />
         </form>
       </header>
       <main>
-        <h1 class="country">Bali, Indonesia</h1>
+        <h1 class="country" id="city">Bali</h1>
         <p class="time">Tuesday, 14:20</p>
         <h1 class="temperature">☀️ 30°</h1>
         <p class="conditions">
@@ -63,6 +56,7 @@
           Netlify</a
         >
       </footer>
+      <script src="src/index.js"></script>
     </body>
   </div>
 </html>
