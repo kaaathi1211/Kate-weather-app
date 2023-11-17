@@ -67,9 +67,24 @@ header {
   text-align: center;
 }
 
+.small {
+  font-size: 0.5em;
+  position: relative;
+  top: -0.3em;
+}
+
+.weather-app-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 50px;
+  margin-right: -20px;
+}
+
 .temperature {
   padding-bottom: 0%;
   text-align: center;
+  font-size: 45px;
+  font-weight: 450;
 }
 
 .conditions {
