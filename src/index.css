@@ -116,6 +116,16 @@ li {
   text-align: center;
 }
 
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forecast-item {
+  margin: 0 30px;
+}
+
 .weather-forecast-date {
   font-size: 16px;
   color: #1c4b82;

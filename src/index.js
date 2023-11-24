@@ -17,7 +17,7 @@ function refreshWeather(response) {
     response.data.temperature.feels_like
   )}°C`;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
-  windElement.innerHTML = `${response.data.wind.speed}km/h`;
+  windElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
   temperatureElement.innerHTML = `${Math.round(
     temperature
   )}<span class="small">°C</span>`;
@@ -53,7 +53,29 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+  let forecastHtml = "<div class='forecast-container'>";
+
+  days.forEach(function (day) {
+    forecastHtml += `<div class="forecast-item">
+         <p class="weather-forecast-date">${day}</p>
+         <div class="weather-forecast-icon">☀️</div>
+         <p class="weather-forecast-temperature">
+           <span class="maximum">20°</span> 
+           <span class="minimum">18°</span>
+         </p>
+       </div>`;
+  });
+
+  forecastHtml += "</div>";
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Sydney");
+displayForecast();
